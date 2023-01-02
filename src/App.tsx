@@ -1,5 +1,13 @@
+// import { AppProvider } from '@/providers/app';
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "@/routes";
+
 function App() {
-  return <div className="container mx-auto bg-gray font-txt">Hello World</div>;
+  return (
+    <Router>
+      <AppRoutes />
+    </Router>
+  );
 }
 
 export default App;
